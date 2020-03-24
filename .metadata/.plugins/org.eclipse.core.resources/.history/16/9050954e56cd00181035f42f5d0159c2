@@ -1,0 +1,12 @@
+package opgave3MutipelChoice;
+
+public class MultipleChoiceApp {
+
+    public static void main(String[] args) {
+        MultipleChoice mc = new MultipleChoice(10);
+        mc.printCorrectAnswers();
+        System.out.println();
+        mc.printStudentAnswers();
+    }
+
+}

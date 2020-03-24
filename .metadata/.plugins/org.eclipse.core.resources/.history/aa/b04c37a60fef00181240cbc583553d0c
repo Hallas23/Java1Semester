@@ -1,0 +1,26 @@
+package opgave1;
+
+import java.util.ArrayList;
+
+public class testApp {
+	
+	public static void main(String[] args) {
+		
+	Mekaniker p1 = new Mekaniker("Jens", "Vej 29", 150, 86);
+	Mekaniker p2 = new Værkfører("Ole", "Vej 23", 150, 85, 90, 100);
+	Mekaniker p3 = new Syn("Ole", "Vej 23", 150, 85, 4, 29);
+	
+	System.out.println(p1.getUgeløn());
+	System.out.println(p2.getUgeløn());
+	
+	ArrayList<Mekaniker> mekanikere = new ArrayList<>();
+	
+	mekanikere.add(p1);
+	mekanikere.addAll(mekanikere);
+	
+	p1.samletLøn();	
+	
+	
+	
+	}
+}

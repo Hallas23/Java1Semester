@@ -1,0 +1,16 @@
+package lektion6;
+import java.util.Scanner;
+
+public class CopierApp {
+
+	public static void main(String[] args) {
+		Copier p = new Copier(480);
+		p.insertPaper(30);
+		p.makeCopy(30);
+		p.printCopier();
+		
+		
+
+	}
+
+}

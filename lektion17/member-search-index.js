@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"model","c":"Flight","l":"Flight()"},{"p":"model","c":"Flight","l":"flightDurationInHours()"},{"p":"model","c":"Flight","l":"getArrivalDate()"},{"p":"model","c":"Flight","l":"midnightFlight()"},{"p":"model","c":"Flight","l":"setDepartDate(LocalDateTime)","url":"setDepartDate-java.time.LocalDateTime-"}]

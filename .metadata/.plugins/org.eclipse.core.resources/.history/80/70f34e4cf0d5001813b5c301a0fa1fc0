@@ -1,0 +1,134 @@
+package lektion16opgaver;
+
+import java.util.ArrayList;
+
+import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
+import javafx.geometry.Insets;
+import javafx.geometry.VPos;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+import javafx.scene.control.CheckBox;
+
+public class gui extends Application {
+	public static void main(String[] args) {
+		Application.launch(args);
+	}
+
+	@Override
+	public void start(Stage stage) {
+		stage.setTitle("Person administration");
+		GridPane pane = new GridPane();
+		this.initContent(pane);
+
+		info = new Info("Create a movie", stage);
+		Scene scene = new Scene(pane);
+		stage.setScene(scene);
+		stage.show();
+	}
+
+	// ------------------------------------------------------------------------
+	private ListView<Person> lvwPersons;
+	private Info info;
+
+	private final Controller controller = new Controller();
+
+	private void initContent(GridPane pane) {
+
+		// pane.setGridLinesVisible(true);
+		pane.setPadding(new Insets(20));
+		pane.setHgap(10);
+		pane.setVgap(10);
+
+		Label lblName = new Label("Name:");
+		pane.add(lblName, 0, 0);
+
+		Label lblNames = new Label("Names:");
+		pane.add(lblNames, 0, 3);
+		GridPane.setValignment(lblNames, VPos.TOP);
+
+		Label lblTitel = new Label("Titel:");
+		pane.add(lblTitel, 0, 1);
+
+		txfName = new TextField();
+		pane.add(txfName, 1, 0);
+
+		SeniorButton = new CheckBox();
+		pane.add(SeniorButton, 1, 2);
+
+		txfTitel = new TextField();
+		pane.add(txfTitel, 1, 1);
+
+		lvwPersons = new ListView<Person>();
+		pane.add(lvwPersons, 1, 3);
+		lvwPersons.setPrefWidth(200);
+		lvwPersons.setPrefHeight(200);
+		lvwPersons.getItems().setAll(controller.persons);
+
+		ChangeListener<Person> listener = (ov, oldPerson, newPerson) -> this.controller.personsItemSelected();
+		lvwPersons.getSelectionModel().selectedItemProperty().addListener(listener);
+
+		Button btnAdd = new Button("Add person");
+		pane.add(btnAdd, 2, 2);
+		btnAdd.setOnAction(event -> this.controller.addAction());
+
+	}
+
+	private class Controller {
+		private ArrayList<Person> persons;
+
+		public Controller() {
+			initPersons();
+		}
+
+		private void initPersons() {
+			persons = new ArrayList<Person>();
+			persons.add(new Person("Jens", "Jensen", true));
+			persons.add(new Person("Hans", "Hansen", false));
+			persons.add(new Person("Pia", "Peters", true));
+		}
+
+		// -------------------------------------------------------------------------
+		// Selected item changed in lvwPersons
+
+		private void personsItemSelected() {
+			Person selected = lvwPersons.getSelectionModel().getSelectedItem();
+			if (selected != null) {
+				txfName.setText(selected.toString());
+			} else {
+				txfName.clear();
+			}
+		}
+
+		// -------------------------------------------------------------------------
+		// Button actions
+
+		private void addAction() {
+			String name = txfName.getText().trim();
+			String titel = txfTitel.getText().trim();
+			if (name.length() > 0 && titel.length() > 0) {
+				Person p = new Person(name, titel, SeniorButton.isSelected());
+				persons.add(p);
+				lvwPersons.getItems().setAll(persons);
+			}
+
+			else if (name.length() == 0 || titel.length() == 0) {
+				Alert alert = new Alert(AlertType.INFORMATION);
+				alert.setTitle("Add person");
+				alert.setHeaderText("Missing name or title");
+				alert.setContentText("Type the name and title of the person");
+				alert.show();
+				// wait for the modal dialog to close
+			}
+		}
+
+	}
+
+}

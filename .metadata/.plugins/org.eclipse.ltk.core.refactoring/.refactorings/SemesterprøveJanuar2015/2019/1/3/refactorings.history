@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;guifx&apos; to &apos;SemesterPrøveJanuar2019/src&apos;&#x0D;&#x0A;- Original project: &apos;SemesterprøveJanuar2015&apos;&#x0D;&#x0A;- Destination element: &apos;SemesterPrøveJanuar2019/src&apos;&#x0D;&#x0A;- Original element: &apos;SemesterprøveJanuar2015/src/guifx&apos;" description="Copy package" destination="=SemesterPrøveJanuar2019/src" element1="/src&lt;guifx" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1547633971853" version="1.0"/>
+</session>

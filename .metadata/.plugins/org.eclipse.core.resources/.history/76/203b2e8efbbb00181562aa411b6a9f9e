@@ -1,0 +1,93 @@
+package child;
+
+import java.util.Scanner;
+
+public class Child {
+	private int age;
+	private boolean boy; // true if the child is a boy
+	private String institution;
+	private String gender;
+	private String team;
+
+	public Child(int age, boolean boy) {
+		this.age = age;
+		this.boy = boy;
+
+		
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public boolean isBoy() {
+		return boy;
+	}
+
+	public void setBoy(boolean boy) {
+		this.boy = boy;
+	}
+
+	public String institution() {
+		if (age == 0) {
+			institution = " Home ";
+		}
+		
+		else if(age > 0 && age < 3) {
+			institution = " Nursery ";
+		}
+		
+		else if(age > 2 && age <6) {
+			institution = " Kindergarten ";
+		}
+		
+		else if(age > 5 && age < 17) {
+			institution = " School ";
+		}
+		
+		else if(age > 16) {
+			institution = " Graduated from school ";
+		}
+	    return institution;
+		
+	}
+	
+	public String gender() {
+		if(boy == true) {
+			gender = "Boy";
+		}
+		
+		else {
+			gender = "Girl";
+		}
+		return gender;
+	}
+	
+	public String team() {
+		if (age < 8 && boy == false) {
+			team = "Tumbling girls ";
+		}
+		
+		else if(age >= 8 && boy == false) {
+			team = "Springy girls";
+		}
+		
+		else if(age < 8 && boy == true) {
+			team = "Young cubs ";
+		}
+		
+		else if(age >= 8 && boy == true) {
+			team = "Cool boys ";
+		
+		}
+	    return team;
+		
+	
+		
+		
+	}
+}

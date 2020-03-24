@@ -1,0 +1,16 @@
+package lektion5bug;
+
+public class BugApp {
+
+	public static void main(String[] args) {
+		Bug b = new Bug(10, 1);
+		b.printBug();
+		b.move();
+		b.move();
+		b.adddirection(1);
+		b.getposition();
+		b.printBug();
+
+	}
+
+}

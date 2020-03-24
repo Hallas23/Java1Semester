@@ -1,0 +1,103 @@
+package ex3lektion2;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Line;
+import javafx.scene.shape.Polygon;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
+public class MainApp extends Application {
+
+    public static void main(String[] args) {
+        Application.launch(args);
+    }
+
+    @Override
+    public void start(Stage stage) {
+        Pane root = this.initContent();
+        Scene scene = new Scene(root);
+
+        stage.setTitle("Shapes");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    private Pane initContent() {
+        Pane pane = new Pane();
+        pane.setPrefSize(400, 400);
+        this.drawShapes(pane);
+        return pane;
+    }
+
+    // ------------------------------------------------------------------------
+
+    private void drawShapes(Pane pane) {
+        Circle circle = new Circle(300, 100, 50);
+        pane.getChildren().add(circle);
+        circle.setFill(Color.YELLOW);
+        circle.setStroke(Color.YELLOW);
+         
+        Rectangle rectangle = new Rectangle(60, 200, 150, 200);
+        pane.getChildren().add(rectangle);	
+        rectangle.setFill(Color.RED);
+        
+        Polygon polygon = new Polygon(35,200,135,100,235,200);
+        pane.getChildren().add(polygon);
+        polygon.setFill(Color.GREEN);
+        polygon.setStroke(Color.AQUA);
+        
+        Rectangle rectangle1 = new Rectangle(80, 225, 60, 60);
+        pane.getChildren().add(rectangle1);
+       
+        Rectangle rectangle2 = new Rectangle(210, 300, 200, 100);
+        pane.getChildren().add(rectangle2);
+        rectangle2.setFill(Color.BLUE);
+        
+        Rectangle rectangle3 = new Rectangle(290, 235, 50, 20);
+        pane.getChildren().add(rectangle3);
+        rectangle3.setFill(Color. BLUE);
+        
+    
+        Text text = new Text(300, 250, "Simon");
+        text.setFill(Color.BLACK);
+        pane.getChildren().add(text);
+        
+        Circle circle2 = new Circle(60, 60, 40);
+        pane.getChildren().add(circle2);
+        circle2.setFill(Color.WHITE);
+        circle2.setStroke(Color.BLUE);
+        
+        Circle circle3 = new Circle(140, 60, 40);
+        pane.getChildren().add(circle3);
+        circle3.setFill(null);
+        circle3.setStroke(Color.BLACK);
+        
+        Circle circle4 = new Circle(220, 60, 40);
+        pane.getChildren().add(circle4);
+        circle4.setFill(null);
+        circle4.setStroke(Color.RED);
+        
+        Circle circle5 = new Circle(100, 100, 40);
+        pane.getChildren().add(circle5);
+        circle5.setFill(null);
+        circle5.setStroke(Color.YELLOW);
+        
+        Circle circle6 = new Circle(100, 160, 40);
+        pane.getChildren().add(circle6);
+        circle6.setFill(null);
+        circle6.setStroke(Color.GREEN);
+        
+        
+
+       
+       
+        
+       
+    }
+
+}

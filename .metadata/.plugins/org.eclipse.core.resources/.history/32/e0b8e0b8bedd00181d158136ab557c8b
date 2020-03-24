@@ -1,0 +1,12 @@
+
+public class testKaj {
+
+	public static void main(String[] args) {
+		Bil e = new Bil("Audi", "blå");
+		Prisgruppe a = new Prisgruppe();
+		a.AddBilA(e);
+		System.out.println(a.getBilera());
+
+	}
+
+}

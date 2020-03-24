@@ -1,0 +1,49 @@
+package application.model;
+
+
+import java.time.LocalDateTime;
+
+public class Udflugt {
+	private String beskrivelse;
+	private String adresse;
+	private LocalDateTime startTid;
+	private LocalDateTime slutTid;
+	private int pris;
+
+	public Udflugt(String beskrivelse, String adresse, LocalDateTime fraDato, LocalDateTime tilDato, int pris) {
+		this.beskrivelse = beskrivelse;
+		this.adresse = adresse;
+		this.startTid = startTid;
+		this.slutTid = slutTid;
+
+	}
+
+	public String getBeskrivelse() {
+		return beskrivelse;
+	}
+
+	public String getAdresse() {
+		return adresse;
+	}
+
+	public LocalDate getFraDato() {
+		return fraDato;
+	}
+
+	public void setFraDato(LocalDate fraDato) {
+		this.fraDato = fraDato;
+	}
+
+	public LocalDate getTilDato() {
+		return tilDato;
+	}
+
+	public void setTilDato(LocalDate tilDato) {
+		this.tilDato = tilDato;
+	}
+	
+	public int getPris() {
+		return pris;
+	}
+
+}

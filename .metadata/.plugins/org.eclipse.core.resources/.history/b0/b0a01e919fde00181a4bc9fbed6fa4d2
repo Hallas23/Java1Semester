@@ -1,0 +1,36 @@
+package Opgave5;
+
+import java.lang.reflect.Array;
+import java.util.*;
+
+/**
+ * Modeling a Swimmer
+ */
+public class Series {
+    private String title;
+    private ArrayList<String> cast;
+    
+    /**
+     * Initialize a new swimmer with name, club, yearGroup, and lap times.
+     */ 
+
+   Series (String title, ArrayList<String> cast) {
+       this.title = title;
+       this.cast = cast;
+   }
+    /**
+     * Return the name of the swimmer
+     */
+    public String getTitlte() {
+        return this.title;
+    }
+    
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public ArrayList<String> getCast() {
+		return new ArrayList<>(cast);
+	}
+    
+   
+}

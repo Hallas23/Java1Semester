@@ -1,0 +1,22 @@
+package lektion5bug;
+
+public class BugApp {
+
+	public static void main(String[] args) {
+		Bug b = new Bug(10);
+		b.printBug();
+		b.move();
+		b.turn(true);
+		b.move();
+		b.turn(false);
+		b.istrue();
+		b.turn(false);
+		b.move();
+		b.move();
+		b.turn(false);
+		b.move();
+		b.printBug();
+
+	}
+
+}

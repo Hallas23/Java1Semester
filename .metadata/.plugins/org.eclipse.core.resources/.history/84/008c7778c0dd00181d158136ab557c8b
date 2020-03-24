@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class testKaj {
+
+	public static void main(String[] args) {
+		Bil e = new Bil("Audi", "blå");
+		Prisgruppe a = new Prisgruppe();
+		a.AddBilA(e);
+		ArrayList<Bil> b = a.getBilera();
+		a.printBilera(e);
+
+	}
+
+}

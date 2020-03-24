@@ -1,0 +1,28 @@
+package application.model;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Deltager et = new Deltager("Ole Jensen", 24, "Jensen vej", "Århus", "eaa",  88887777, 22224444);
+		Deltager to = new Deltager("Ole Wedel", 28, "egon vej", "Århus", "mongoTV", 88887777, 22224444);
+		
+		Hotel hotel1 = new Hotel("Svanen", "jern 25", 3, 200, 300, 400);		
+		HotelTillæg tillægs = new HotelTillæg(false, false, true);
+		
+		
+		Udflugt Herning = new Udflugt("Tur til Herning museum", "Herning", LocalDateTime.of(2018, 11, 15, 12, 30), LocalDateTime.of(2018, 11, 15, 16, 30), 300);
+
+		Tilmelding en = new Tilmelding("1", "MarkHansen", true, et, Herning, hotel1, tillægs);
+		Tilmelding ee = new Tilmelding("1", "MarkHansen", true, to, Herning, hotel1, tillægs);
+		
+		System.out.println(en);
+		System.out.println();
+		System.out.println(ee);
+		
+	}
+
+}

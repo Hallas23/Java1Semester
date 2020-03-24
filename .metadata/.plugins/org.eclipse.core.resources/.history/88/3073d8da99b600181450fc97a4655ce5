@@ -1,0 +1,28 @@
+package lektion5bug;
+
+public class Bug {
+	
+	private int position;
+	private boolean direction;
+	private int move;
+	
+	public Bug(int initialposition) {
+		position = initialposition;
+		direction = true;
+	}
+	
+	public void turn(boolean turn) {
+		direction = turn;
+	}
+	
+	public void move() {
+		move = position + position ++;;
+	}
+
+	public void printBug() {
+		System.out.println(position);
+	}
+	
+	
+}
+

@@ -1,0 +1,6 @@
+package opgave1;
+
+public class Syn extends Mekaniker {
+	private int syn;
+	private int tillæg;
+}

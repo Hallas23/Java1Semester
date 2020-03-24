@@ -1,0 +1,17 @@
+package model;
+
+import java.time.LocalDateTime;
+
+public class FlightTest {
+
+    public static void main(String[] args) {
+        Flight flight = new Flight("AY025", "Seoul");
+        flight.addPassenger("Arnold", 31);
+        flight.addPassenger("Bruce", 59);
+        flight.addPassenger("Dolph", 24).toString();
+        flight.addPassenger("Linda", 59);
+     
+        //flight.createPassenger("Jennifer", 65);
+    }
+
+}

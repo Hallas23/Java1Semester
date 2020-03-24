@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="sun.reflect.generics.tree.IntSignature"/>
+    <fullyQualifiedTypeName name="arraylists.Player"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="javafx.scene.text.Font"/>
+    <fullyQualifiedTypeName name="javafx.event.Event"/>
+    <fullyQualifiedTypeName name="javafx.scene.input.MouseEvent"/>
+    <fullyQualifiedTypeName name="opgave2.Person"/>
+    <fullyQualifiedTypeName name="application.controller.Controller"/>
+    <fullyQualifiedTypeName name="com.sun.deploy.util.SystemPropertyUtil"/>
+    <fullyQualifiedTypeName name="storage.Storage"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="application.model.Deltager"/>
+    <fullyQualifiedTypeName name="application.model.Konference"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.awt.Checkbox"/>
+    <fullyQualifiedTypeName name="application.model.HotelTillæg"/>
+    <fullyQualifiedTypeName name="application.model.Tilmelding"/>
+    <fullyQualifiedTypeName name="application.model.Udflugt"/>
+    <fullyQualifiedTypeName name="minihandel.Customer"/>
+    <fullyQualifiedTypeName name="minihandel.Product"/>
+    <fullyQualifiedTypeName name="opgave4.Elipse"/>
+    <fullyQualifiedTypeName name="Measurable"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="opgave2.Customer"/>
+    <fullyQualifiedTypeName name="opgave3.InsertionSortering"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="opgave2.Fletning"/>
+    <fullyQualifiedTypeName name="opgave1.Fletning2"/>
+    <fullyQualifiedTypeName name="opgave2.Fletning2"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="application.model.Kunde"/>
+    <fullyQualifiedTypeName name="application.model.Forestilling"/>
+    <fullyQualifiedTypeName name="application.model.Plads"/>
+    <fullyQualifiedTypeName name="application.model.Bestilling"/>
+</qualifiedTypeNameHistroy>

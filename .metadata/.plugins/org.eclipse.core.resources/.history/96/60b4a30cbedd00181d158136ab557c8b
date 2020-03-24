@@ -1,0 +1,37 @@
+
+public class Bil {
+
+	private String name;
+	private String address;
+
+	public Bil(String inputName, String inputAddress) {
+		name = inputName;
+		address = inputAddress;
+
+	}
+	// Alle setMetoderne
+
+	public void setName(String inputName) {
+		name = inputName;
+	}
+
+	public void setAddres(String inputAddress) {
+		address = inputAddress;
+	}
+
+	// Alle getMetoderne
+
+	public String getName() {
+		return name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void printPerson() {
+		System.out.println(name);
+		System.out.println(address);
+	}
+
+}

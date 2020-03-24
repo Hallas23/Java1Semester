@@ -1,0 +1,65 @@
+package Opgave5;
+
+import java.lang.reflect.Array;
+import java.util.*;
+
+
+
+import opgave4.Swimmer;
+
+/**
+ * Modeling a Swimmer
+ */
+public class Series {
+    private String title;
+    private ArrayList<String> cast;
+    private final ArrayList<Episode> episodes = new ArrayList<>();
+    Scanner sc = new Scanner(System.in);
+    
+    /**
+     * Initialize a new swimmer with name, club, yearGroup, and lap times.
+     */ 
+
+   public Series (String title, ArrayList<String> cast) {
+       this.title = title;
+       this.cast = cast;
+   }
+   
+   public Episode createEpisode (int number,ArrayList<String> guestActors, int length) {
+	   Episode episode = new Episode(number, guestActors, length);
+	   episodes.add(episode);
+	   return episode;
+	}
+    /**
+     * Return the name of the swimmer
+     */
+    public String getTitlte() {
+        return this.title;
+    }
+    
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public ArrayList<String> getCast() {
+		return new ArrayList<>(cast);
+	}
+	
+	public int totalLength() {
+		int total = 0;
+		for (int i = 0; i < episodes.size(); i++) {
+			total = total +episodes.get(i).getLength();
+		}
+		return total;
+	}
+	
+	public void addGuestActors(int episode) {
+		String guest = sc.nextLine();
+		
+		episodes.get(episode).addGuestActors(guest);
+		
+		
+	}
+   
+    
+   
+}

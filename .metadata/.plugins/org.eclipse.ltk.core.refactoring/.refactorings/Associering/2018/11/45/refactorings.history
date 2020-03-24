@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Prisgruppe.java&apos; to &apos;lektion20svømmer/src/opgave3&apos;&#x0D;&#x0A;- Original project: &apos;Associering&apos;&#x0D;&#x0A;- Destination element: &apos;lektion20svømmer/src/opgave3&apos;&#x0D;&#x0A;- Original element: &apos;Prisgruppe.java&apos;" description="Copy compilation unit" destination="=lektion20svømmer/src&lt;opgave3" element1="/src&lt;{Prisgruppe.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1541411452204" units="1" version="1.0"/>
+</session>

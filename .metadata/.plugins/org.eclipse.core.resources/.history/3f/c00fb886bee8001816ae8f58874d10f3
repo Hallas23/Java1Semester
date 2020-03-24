@@ -1,0 +1,75 @@
+package application.model;
+
+import java.util.ArrayList;
+
+public class Tilmelding {
+	private String navn;
+	private String ledsagernavn;
+	private boolean foredragsholder;
+	
+	
+	private Hotel hotel;
+	private Deltager deltager;
+	private Konference konference;
+	private Udflugt udflugt;
+	private HotelTillæg hoteltillæg;
+	
+
+
+	public Tilmelding(String navn, String ledsagernavn, boolean foredragsholder, Deltager deltager, Udflugt udflugt, Hotel hotel) {
+		this.navn = navn;
+		this.ledsagernavn = ledsagernavn;
+		this.foredragsholder = foredragsholder;
+		this.deltager = deltager;
+		this.udflugt = udflugt;
+		this.hotel = hotel;
+	}
+
+
+	public Deltager getDeltager() {
+		return deltager;
+	}
+
+
+	public String getNavn() {
+		return navn;
+	}
+	
+	public boolean isForedragsholder() {
+		return foredragsholder;
+	}
+	
+	public String getLedsagernavn() {
+		return ledsagernavn;
+	}
+
+	public void setLedsagernavn(String ledsagernavn) {
+		this.ledsagernavn = ledsagernavn;
+	}
+	
+	public String toString() {
+		return deltager + "/n" + " " + ledsagernavn + " Valg af udflugt " + udflugt;
+		
+	}
+	
+	public Hotel getHotel() {
+		return hotel;
+	}
+	
+	public void setHotel(Hotel hotel) {
+		if(this.hotel != hotel) {
+			this.hotel = hotel;
+		}
+	}
+	
+	public Udflugt getUdflugt() {
+		return udflugt;
+	}
+	
+	public void setUdflugt(Udflugt udflugt) {
+		this.udflugt = udflugt;
+	}
+
+	
+	
+}

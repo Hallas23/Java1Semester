@@ -1,0 +1,17 @@
+package lektion8;
+
+public class E602 {
+
+	public static void main(String[] args) {
+		
+		int x = 0;
+		int sum = 0;
+		
+		while((x%2) == 0 && x <=100) {
+			sum = sum + x;
+			
+		}
+		System.out.println(sum);
+	}
+
+}

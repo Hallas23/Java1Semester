@@ -1,0 +1,27 @@
+package Opgave5;
+
+import java.util.ArrayList;
+
+public class SwimmerApp {
+    
+    public static void main(String[] args) {
+
+        
+        ArrayList<String> cast = new ArrayList<>();
+        cast.add("Micheal");
+        cast.add("Jim");
+        cast.add("Dwight");
+        cast.add("Pam");
+        
+       
+        
+        Series office = new Series("The Office", cast);
+        office.createEpisode(1, "No", 7);
+        
+        
+      
+      
+        
+    }
+    
+}

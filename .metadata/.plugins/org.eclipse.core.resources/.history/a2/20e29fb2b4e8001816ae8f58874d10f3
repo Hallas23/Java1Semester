@@ -1,0 +1,84 @@
+package application.model;
+
+import java.util.ArrayList;
+
+public class Tilmelding {
+	private String navn;
+	private String ledsagernavn;
+	private boolean foredragsholder;
+	
+	
+	private Hotel hotel;
+	private Deltager deltager;
+	private Konference konference;
+	private Udflugt udflugt;
+	private HotelTillæg hoteltillæg;
+	
+
+
+	public Tilmelding(String navn, String ledsagernavn, boolean foredragsholder, Deltager deltager) {
+		this.navn = navn;
+		this.ledsagernavn = ledsagernavn;
+		this.foredragsholder = foredragsholder;
+		this.deltager = deltager;
+	}
+
+
+	public Deltager getDeltager() {
+		return deltager;
+	}
+
+	public void AddDeltager(Deltager deltager) {
+		if (!deltagere.contains(deltager)) {
+			deltagere.add(deltager);
+			deltager.addTilmelding(this);
+		}
+	}
+
+	public void removeDeltager(Deltager deltager) {
+		if (deltagere.contains(deltager)) {
+			deltagere.remove(deltager);
+			deltager.removeTilmelding(this);
+		}
+	}
+
+	public String getNavn() {
+		return navn;
+	}
+	
+	public boolean isForedragsholder() {
+		return foredragsholder;
+	}
+
+	public void printDeltagere() {
+		int i = 0;
+		for (Deltager a : deltagere) {
+			i++;
+			System.out.print("Deltager " + i + " ");
+			System.out.println(a);
+		}
+	}
+	
+	public String getLedsagernavn() {
+		return ledsagernavn;
+	}
+
+	public void setLedsagernavn(String ledsagernavn) {
+		this.ledsagernavn = ledsagernavn;
+	}
+	
+	public String toString() {
+		System.out.print(" || " + navn + " ledsager: ");
+		return ledsagernavn;
+	}
+	
+	public Hotel getHotel() {
+		return hotel;
+	}
+	
+	public void setHotel(Hotel hotel) {
+		if(this.hotel != hotel) {
+			this.hotel = hotel;
+		}
+	}
+}

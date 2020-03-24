@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;opgave1&apos; to &apos;Lektion28/src&apos;&#x0D;&#x0A;- Original project: &apos;Lektion 27&apos;&#x0D;&#x0A;- Destination element: &apos;Lektion28/src&apos;&#x0D;&#x0A;- Original element: &apos;Lektion 27/src/opgave1&apos;" description="Copy package" destination="=Lektion28/src" element1="/src&lt;opgave1" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1543398282008" version="1.0"/>
+</session>

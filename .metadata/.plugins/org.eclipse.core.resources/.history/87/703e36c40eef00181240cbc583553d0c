@@ -1,0 +1,12 @@
+package opgave1;
+
+public class Syn extends Mekaniker {
+	private int syn;
+	private int tillæg;
+	
+	public Syn(String navn, String adresse, int timeløn, int årsvendeprøve, int syn, int tillæg) {
+		super(navn, adresse, timeløn, årsvendeprøve);
+		this.syn = syn;
+		this.tillæg = tillæg;
+	}
+}
